@@ -1,11 +1,13 @@
-export default () => {
+import { Link } from "react-router-dom";
+
+const Landing = () => {
   return (
     <>
       <header className="container">
         <nav className="navbar">
-          <a href="#" className="navbar-brand">
-            <img src="/assets/navbar-brand.svg" className="logo-z" />
-          </a>
+          <Link to="/" className="navbar-brand">
+            <img src="/assets/navbar-brand.svg" alt="navbar-brand" className="logo-z" />
+          </Link>
         </nav>
       </header>
 
@@ -23,7 +25,7 @@ export default () => {
                   </font>
                 </h1>
                 <div className="row justify-content-center">
-                  <img src="/assets/hero-image.svg" className="image-hero"/>
+                  <img src="/assets/hero-image.svg" alt="hero" className="image-hero"/>
                 </div>
                 <p>
                   “Ambillah zakat dari sebagian harta mereka, dengan zakat itu
@@ -31,9 +33,9 @@ export default () => {
                   mereka...” (At Taubah : 103)
                 </p>
                 <div className="text-center mt-3">
-                  <button className="btn btn-kalkulator-zakat py-2 px-5">
+                  <Link to='/calculator-zakat' className="btn btn-kalkulator-zakat py-2 px-5">
                     Kalkulator Zakat
-                  </button>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -43,9 +45,11 @@ export default () => {
 
       <footer>
         <section className="row section-footer">
-          <img src="/assets/wave.svg" className="wave"/>
+          <img src="/assets/wave.svg" alt="wave" className="wave"/>
         </section>
       </footer>
     </>
   );
 };
+
+export default Landing

@@ -1,11 +1,14 @@
+import { Routes, Route } from "react-router-dom";
+
 import Landing from "./pages/Landing";
 import CalculatorZakat from "./pages/CalculatorZakat";
 
 function App() {
   return (
-    <>
-      <CalculatorZakat />
-    </>
+    <Routes>
+      <Route exact path="/" element={<Landing />}/>
+      <Route exact path="/calculator-zakat" element={<CalculatorZakat />}/>
+    </Routes>
   );
 }
 

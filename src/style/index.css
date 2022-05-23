@@ -77,6 +77,7 @@ body {
   -o-object-position: 10px 10%;
      object-position: 10px 10%;
   overflow: hidden;
+  z-index: -999;
 }
 
 .section-footer .wave {
@@ -101,5 +102,14 @@ body {
 
 .card-details td {
   color: #264653;
+}
+
+.card-details tfoot {
+  border-top: 2px solid gray;
+  margin-top: 30px;
+}
+
+.card-details tbody {
+  padding: 30px 0px;
 }
 /*# sourceMappingURL=index.css.map */

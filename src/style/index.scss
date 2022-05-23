@@ -82,6 +82,7 @@ body {
   object-fit: none;
   object-position: 10px 10%;
   overflow: hidden;
+  z-index: -999;
 
   .wave {
   margin-top: -10px;
@@ -105,5 +106,14 @@ body {
 
   td {
     color: #264653;
+  }
+
+  tfoot {
+    border-top: 2px solid gray;
+    margin-top: 30px
+  }
+
+  tbody {
+    padding: 30px 0px;
   }
 }
